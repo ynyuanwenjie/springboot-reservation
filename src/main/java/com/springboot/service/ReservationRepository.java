@@ -13,7 +13,7 @@ import java.util.Collection;
  */
 public interface ReservationRepository extends JpaRepository<Reservation,Integer> {
 
-   /* @RestResource(path="by-name")
-    Collection<Reservation> findByName(@Param("rn")String name);*/
+    @RestResource(path="by-name")
+    Collection<Reservation> findByName(@Param("rn")String name);
 
 }
